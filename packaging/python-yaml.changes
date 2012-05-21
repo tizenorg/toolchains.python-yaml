@@ -1,0 +1,11 @@
+* Thu May 05 2011 Anas Nashif <anas.nashif@intel.com> - 3.09
+- Renaming packages to follow python package naming convention
+
+* Tue Aug 24 2010 Jian-feng Ding <jian-feng.ding@intel.com> 3.09
+- Upgrade to 3.09 by spectacle
+
+* Tue Feb 17 2009 Anas Nashif <anas.nashif@intel.com> 3.08
+- Update to 3.08
+
+* Sat Jan 24 2009 Anas Nashif <anas.nashif@intel.com> 3.06
+- Initial import into Moblin
