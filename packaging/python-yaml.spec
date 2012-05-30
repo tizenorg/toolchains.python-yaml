@@ -10,6 +10,7 @@ Group:      Development/Libraries
 License:    MIT
 URL:        http://pyyaml.org/
 Source0:    http://pyyaml.org/download/pyyaml/PyYAML-%{version}.tar.gz
+Source1001: packaging/python-yaml.manifest 
 BuildRequires:  python-devel
 BuildRequires:  python-setuptools
 Provides:   PyYAML
@@ -37,6 +38,7 @@ configuration files to object serialization and persistance.
 
 
 %build
+cp %{SOURCE1001} .
 
 CFLAGS="$RPM_OPT_FLAGS" %{__python} setup.py build
 
@@ -55,6 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %files
+%manifest python-yaml.manifest
 %defattr(-,root,root,-)
 %doc PKG-INFO README LICENSE examples
 %{python_sitearch}/*
