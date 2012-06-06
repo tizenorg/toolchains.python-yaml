@@ -9,7 +9,7 @@ Release:    1
 Group:      Development/Libraries
 License:    MIT
 URL:        http://pyyaml.org/
-Source0:    http://pyyaml.org/download/pyyaml/PyYAML-%{version}.tar.gz
+Source0:    %{name}-%{version}.tar.gz
 Source1001: packaging/python-yaml.manifest 
 BuildRequires:  python-devel
 BuildRequires:  python-setuptools
@@ -34,7 +34,7 @@ configuration files to object serialization and persistance.
 
 
 %prep
-%setup -q -n PyYAML-%{version}
+%setup -q
 
 
 %build
